@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            app:srcCompat="@drawable/_35861" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSitiosT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SITIOS TURÍSTICOS"
+            android:translationY="1000px" />
+
+        <Button
+            android:id="@+id/btnU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MI UBICACIÓN"
+            android:translationY="1000px"/>
+
+        <Button
+            android:id="@+id/btnTiposM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIPOS DE MAPA"
+            android:translationY="1000px"/>
+        <Button
+            android:id="@+id/btn_mapa"
+            android:layout_width="138dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="143dp"
+            android:layout_marginTop="72dp"
+            android:text="IR MAPA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
